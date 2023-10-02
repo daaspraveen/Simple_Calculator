@@ -1,0 +1,48 @@
+body{
+    margin: 0;padding: 0;background-color: lightseagreen;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+*{transition: 1s;transition-timing-function: ease-in-out;}
+.main{
+    max-width: 400px; min-width: 100px;
+    margin: 20px auto;
+} 
+.heading{color: darkblue;text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;font-weight: 300;}
+.calc-box{background-color:rgba(0, 0, 0, 0.759);
+    padding: 20px;border: 1px solid black;border-radius: 10px;
+    box-shadow: 2px 2px 20px black;
+}
+.value{color: lightblue;font-size: 22px;margin-bottom: 5px;}
+input:focus{background-color:lightsalmon ;font-weight: bold;}
+input{font-size: 1.2rem; text-align: end;
+    width: 50%;margin: 0px auto 10px;height: 30px;border-radius: 20px;border: 1px;padding: 5px 10px;
+
+}
+.op:hover{background-color: rgb(91, 91, 255);}
+button{padding: 2% 5%;height: auto;font-weight: bold;
+    outline: 0; background-color: lightblue; border: 0px;border-radius: 10px;
+    font-size: 1.5rem; cursor: pointer; margin-right:5px ;
+}
+
+.result-box{display: flex;justify-content: center;align-items: center;}
+.result{font-size: 1.2rem;color: white;background-color: green;
+    width: 160px;margin-top: 10px;
+}
+.result:hover{background-color: rgb(6, 154, 6);}
+#result-line{width:90% ;margin:5px auto;text-align: end;display: none;
+    word-wrap: break-word;
+    padding:2px 10px ;border-radius: 20px;background-color: blanchedalmond;
+}
+#reset-btn{background-color: rgba(255, 68, 0, 0.662);color: white;
+    max-width: 80%;min-width: 50%;display: flex;justify-content: center;
+    font-size: 1.2rem;margin: 30px auto;
+}
+#reset-btn:hover{background-color: red;}
+
+@media screen and (max-width:350px) {
+    .main{width: 90%;margin: 5px auto;height: 100vh;}
+    input{width: 90%;}
+
+}
+

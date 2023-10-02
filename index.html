@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Das | Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+</head>
+<body>
+<div class="main">
+    <h1 class="heading">Simple Calculator</h1>
+    <div class="calc-box">
+    <form action="" id="Form">
+        <h1 class="value" >Enter Value- 1</h1>
+        <input type="text" title="value-1"  id="value1" >
+
+        <h1 class="value">Enter Value- 2</h1>
+        <input type="text" title="value-2"  id="value2" > <br>
+
+            <h1 class="value">Select Operation</h1>
+
+            <button type="button" class="op" id="add" onclick="Addbtn()">+</button>
+            <button type="button" class="op" id="sub" onclick="Subbtn()">-</button>
+            <button type="button" class="op" id="mul" onclick="Mulbtn()">x</button>
+            <button type="button" class="op" id="div" onclick="Divbtn()">/</button>
+    
+
+        <div class="result-box">
+            <button type="button" class="result" onclick="resultBtn()">Your Result</button>
+        </div>
+        <h1 id="result-line"> 0  </h1>
+
+        <button type="reset" title="reset" id="reset-btn" onclick="reset()">Reset</button>
+    </form>
+    </div>
+
+
+</div>
+</body>
+</html>
